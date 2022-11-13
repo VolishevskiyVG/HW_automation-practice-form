@@ -22,6 +22,8 @@ public class AutomationPracticeForm {
     @Test
     void fillFormTest() {
         open("/automation-practice-form");
+        executeJavaScript("$('footer').remove()");
+        executeJavaScript("$('#fixedban').remove()");
         $("#firstName").setValue("Vasili");
         $("#lastName").setValue("Volishevskii");
         $("#userEmail").setValue("Volishevskii@mail.ru");
