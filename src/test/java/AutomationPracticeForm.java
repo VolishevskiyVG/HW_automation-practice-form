@@ -36,7 +36,7 @@ public class AutomationPracticeForm {
         $(".react-datepicker__day--028").click();
         $("#subjectsInput").setValue("English").pressEnter();
         $(byText("English")).click();
-        $(".form-file .form-control-file").uploadFile(new File("C:/Users/volis/Desktop/test.jpg"));
+        $(".form-file .form-control-file").uploadFile(new File("src/test/resources/test.jpg"));
         $(byText("Reading")).click();
         $("#currentAddress").setValue("Krasnodar street gorkogo 53");
         $("#state").click();
